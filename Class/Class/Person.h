@@ -14,6 +14,10 @@
 @property(nonatomic,assign) BOOL male;
 @property(nonatomic,copy) NSString *name;
 
+-(id)initWithName: (NSString*)name age:(int) age;
 // 实例方法。--(返回类型） 方法名 参数
 -(void) eating;
+
+
+
 @end

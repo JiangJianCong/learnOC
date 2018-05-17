@@ -19,8 +19,12 @@ int main(int argc, const char * argv[]) {
 //        person1.age = 18;
 //        person1.male = true;
 //        [person1 eating];
-        PrintClass *printclass1 = [[PrintClass alloc] init];
-        [printclass1 printClass];
+//        PrintClass *printclass1 = [[PrintClass alloc] init];
+//        [printclass1 printClass];
+        
+        Person *person = [[Person alloc] initWithName:@"space" age:18];
+        NSLog(@"%@  %d",person.name,person.age);
+        
         
         
     }

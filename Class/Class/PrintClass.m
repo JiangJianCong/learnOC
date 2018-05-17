@@ -10,9 +10,18 @@
 
 @implementation PrintClass
 
+-(id) init {
+    self = [super init];
+    if (self) {
+        NSLog(@"我是构造方法");
+    }
+    return self;
+}
+
 -(void)printClass{
     NSLog(@"HelloWorld!!!");
 }
+
 
 
 @end
