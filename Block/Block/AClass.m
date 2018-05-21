@@ -37,6 +37,7 @@
     NSLog(@"%d",newB);
      */
     
+    /*
     // 3类之间的通信
     
     MyBlock b1 = ^(NSString *str1) {
@@ -45,6 +46,12 @@
     
     BClass *classB  =[[BClass alloc]init];
     [classB testBlock:b1 str1:@"Aclass"];
+     */
     
+//    快速实现方法
+    BClass *classb = [[BClass alloc]init];
+    [classb testBlock:^(NSString *str1){
+        NSLog(@"Aclass:%@",str1);
+    } str1:@"aclass"];
 }
 @end
