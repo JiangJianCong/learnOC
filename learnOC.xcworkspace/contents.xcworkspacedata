@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KVC/KVC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Timer/Timer.xcodeproj">
    </FileRef>
    <FileRef
