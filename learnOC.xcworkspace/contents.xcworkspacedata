@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIViewStudy/UIViewStudy.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HelloUI/HelloUI.xcodeproj">
    </FileRef>
    <FileRef
