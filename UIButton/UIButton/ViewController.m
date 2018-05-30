@@ -13,9 +13,11 @@
 #import "Mybutton.h"
 
 @interface ViewController ()
+
+
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 
-- (IBAction)myAction:(id)sender;
+
 
 
 
@@ -61,7 +63,7 @@
     // 为button添加内容 1、title 2、状态
     [button setTitle:@"Button5" forState:UIControlStateNormal];
     
-    // 为button内容设置相应颜色
+    // 为butt`on内容设置相应颜色
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
     button.layer.borderColor = [UIColor blueColor].CGColor;
@@ -177,4 +179,5 @@
     UIButton *bt = (UIButton*) sender;
     bt.backgroundColor = [UIColor greenColor];
 }
-@end
+
+
