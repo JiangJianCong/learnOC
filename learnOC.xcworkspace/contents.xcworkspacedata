@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GestureDemo/GestureDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UI&#x8865;&#x5145;/UI&#x8865;&#x5145;.xcodeproj">
    </FileRef>
    <FileRef
