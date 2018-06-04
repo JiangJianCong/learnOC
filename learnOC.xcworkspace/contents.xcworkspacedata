@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Chart2/Chart2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Quartz2d1/Quartz2d1.xcodeproj">
    </FileRef>
    <FileRef
