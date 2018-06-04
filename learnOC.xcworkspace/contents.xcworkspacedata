@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:&#x56fe;&#x5f62;&#x4e0a;&#x4e0b;&#x6587;&#x6808;/&#x56fe;&#x5f62;&#x4e0a;&#x4e0b;&#x6587;&#x6808;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:QuartzDownload/QuartzDownload.xcodeproj">
    </FileRef>
    <FileRef
