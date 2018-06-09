@@ -1,5 +1,5 @@
 //
-//  UnBlockView.h
+//  NodeView.h
 //  DrawPrj
 //
 //  Created by space on 2018/6/9.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UnBlockView : UIView
+@interface NodeView : UIImageView
+
+@property (nonatomic, copy) NSString *number;
 
 @end

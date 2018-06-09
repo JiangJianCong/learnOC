@@ -14,6 +14,8 @@
 		B267F6A020CC13DD00B9531D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B267F69E20CC13DD00B9531D /* LaunchScreen.storyboard */; };
 		B267F6A320CC13DD00B9531D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6A220CC13DD00B9531D /* main.m */; };
 		B267F6AF20CC14A900B9531D /* UnBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6AE20CC14A900B9531D /* UnBlockView.m */; };
+		B267F6B220CC1B6300B9531D /* NodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6B120CC1B6300B9531D /* NodeView.m */; };
+		B267F6B820CC27E900B9531D /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6B720CC27E900B9531D /* FunctionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		B267F6A220CC13DD00B9531D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B267F6AD20CC14A900B9531D /* UnBlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnBlockView.h; sourceTree = "<group>"; };
 		B267F6AE20CC14A900B9531D /* UnBlockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnBlockView.m; sourceTree = "<group>"; };
+		B267F6B020CC1B6300B9531D /* NodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeView.h; sourceTree = "<group>"; };
+		B267F6B120CC1B6300B9531D /* NodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeView.m; sourceTree = "<group>"; };
+		B267F6B620CC27E900B9531D /* FunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
+		B267F6B720CC27E900B9531D /* FunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,13 @@
 				B267F69E20CC13DD00B9531D /* LaunchScreen.storyboard */,
 				B267F6A220CC13DD00B9531D /* main.m */,
 				B267F6A120CC13DD00B9531D /* Info.plist */,
+				B267F6AD20CC14A900B9531D /* UnBlockView.h */,
+				B267F6AE20CC14A900B9531D /* UnBlockView.m */,
 				B267F6AC20CC145700B9531D /* Supporting Files */,
+				B267F6B020CC1B6300B9531D /* NodeView.h */,
+				B267F6B120CC1B6300B9531D /* NodeView.m */,
+				B267F6B620CC27E900B9531D /* FunctionViewController.h */,
+				B267F6B720CC27E900B9531D /* FunctionViewController.m */,
 			);
 			path = DrawPrj;
 			sourceTree = "<group>";
@@ -78,8 +90,6 @@
 		B267F6AC20CC145700B9531D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B267F6AD20CC14A900B9531D /* UnBlockView.h */,
-				B267F6AE20CC14A900B9531D /* UnBlockView.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B267F6B820CC27E900B9531D /* FunctionViewController.m in Sources */,
 				B267F69820CC13DA00B9531D /* ViewController.m in Sources */,
+				B267F6B220CC1B6300B9531D /* NodeView.m in Sources */,
 				B267F6AF20CC14A900B9531D /* UnBlockView.m in Sources */,
 				B267F6A320CC13DD00B9531D /* main.m in Sources */,
 				B267F69520CC13DA00B9531D /* AppDelegate.m in Sources */,
