@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DrawPrj/DrawPrj.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:K&#x7ebf;&#x56fe;&#x7ed8;&#x5236;/K&#x7ebf;&#x56fe;&#x7ed8;&#x5236;.xcodeproj">
    </FileRef>
    <FileRef
