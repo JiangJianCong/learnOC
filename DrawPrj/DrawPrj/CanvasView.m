@@ -13,6 +13,7 @@
 
 @property(nonatomic, assign) CGMutablePathRef path;
 @property(nonatomic, strong) NSMutableArray *lineModels;
+
 @end
 
 
