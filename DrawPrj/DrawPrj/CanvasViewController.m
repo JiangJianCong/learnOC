@@ -30,6 +30,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
     
+    self.lastColor = [UIColor blackColor];
+    self.lastLineWidth = 2;
+    
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(self.view.center.x - 40, CGRectGetHeight(self.view.frame) - 50, 80, 50);
     [backBtn setImage:[UIImage imageNamed:@"chahao"] forState:UIControlStateNormal];
@@ -57,7 +60,7 @@
     __weak typeof (self) weakself = self;
     self.toolView.penBlock = ^{
         weakself.bEraserMode = NO;
-        weakself.canvasView.color = [UIColor blackColor]; //weakself.lastColor;
+        weakself.canvasView.color = weakself.lastColor;
         weakself.canvasView.lineWidth = weakself.lastLineWidth;
         
     };
@@ -128,6 +131,8 @@
 -(CanvasView *) canvasView {
     if (!_canvasView) {
         _canvasView = [[CanvasView alloc]initWithFrame:CGRectMake(20, 130, self.view.frame.size.width - 40, self.view.frame.size.height - 130 -20)];
+        _canvasView.color = [UIColor blackColor];
+        _canvasView.lineWidth = 2;
     }
     return _canvasView;
 }
@@ -135,6 +140,13 @@
 -(ColorView *) colorView {
     if (!_colorView) {
         _colorView = [[ColorView alloc] initWithFrame:self.view.frame];
+        __weak typeof (self) weakify = self;
+        _colorView.selectColorBlock = ^(UIColor *color) {
+            if (!weakify.bEraserMode) {
+                weakify.canvasView.color = color;
+            }
+            weakify.lastColor = color;
+        };
     }
     return _colorView;
 }

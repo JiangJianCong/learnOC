@@ -150,4 +150,44 @@ UINavigationController *nav = [[UINavigationController alloc] initWithRootViewCo
 ```
 
 
+### 画图板
+- 新建画图板类
+	- 画图板的宽高和屏幕一样，因为方便随便点击就能继续画画
+```objective-c
+	-(ColorView *) colorView {
+    if (!_colorView) {
+        _colorView = [[ColorView alloc] initWithFrame:self.view.frame];
+    }
+    return _colorView;
+	}
+```
 
+- 画板类下面加了个bottomView，用来选颜色用
+
+- 在bottomView中加了10个颜色button，用来对不同颜色的选择
+
+- 新增一个block提供给CanvasViewController来调用，用来传输颜色
+```objective-c
+@interface ColorView : UIView
+...
+@property (nonatomic, copy) void(^selectColorBlock)(UIColor *color);
+...
+@end
+```
+
+- 在CanvasViewController调用
+```objective-c
+-(ColorView *) colorView {
+    if (!_colorView) {
+        _colorView = [[ColorView alloc] initWithFrame:self.view.frame];
+        __weak typeof (self) weakify = self;
+        _colorView.selectColorBlock = ^(UIColor *color) {
+            if (!weakify.bEraserMode) {
+                weakify.canvasView.color = color;
+            }
+            weakify.lastColor = color;
+        };
+    }
+    return _colorView;
+}
+```

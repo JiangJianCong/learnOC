@@ -10,6 +10,8 @@
 
 @interface ColorView : UIView
 
+@property (nonatomic, copy) void(^selectColorBlock)(UIColor *color);
+
 -(void) showAnimation;
 
 @end
