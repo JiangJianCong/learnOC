@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CanvasView : UIView
-
+@property (nonatomic, strong) UIColor *color;
+@property CGFloat lineWidth;
+-(void)undo;
+-(void)clear;
 @end

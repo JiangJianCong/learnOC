@@ -56,8 +56,8 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     LineModel *lineModel = [[LineModel alloc] init];
     lineModel.path = CGPathCreateMutableCopy(self.path); // 即使self.path被释放掉也不影响值
-    lineModel.lineWidth = 2;
-    lineModel.color = [UIColor blackColor];
+    lineModel.lineWidth = self.lineWidth;
+    lineModel.color = self.color;
     [self.lineModels addObject:lineModel];
     
     CGPathRelease(self.path);
@@ -78,10 +78,32 @@
     if (self.path) {
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGContextAddPath(context, self.path);
-        CGContextSetLineWidth(context, 2);
-        CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+        CGContextSetLineWidth(context, self.lineWidth);
+        CGContextSetStrokeColorWithColor(context, self.color.CGColor);
         CGContextDrawPath(context, kCGPathStroke);
     }
+}
+
+
+/**
+ 回退
+ */
+-(void)undo {
+    if (self.lineModels.count > 0) {
+        [self.lineModels removeLastObject];
+        [self setNeedsDisplay];
+
+    }
+}
+
+
+/**
+ 清屏
+ */
+-(void)clear {
+    [self.lineModels removeAllObjects];
+    [self setNeedsDisplay];
+    
 }
 
 @end
