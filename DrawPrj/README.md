@@ -64,3 +64,90 @@ UINavigationController *nav = [[UINavigationController alloc] initWithRootViewCo
 }
 ```
 
+
+### 新建了ToolView类，用于进行不同操作的选择
+- 新建6个UIButton、1个UILabel和1个UISlider并且对其初始化
+- 新建每一个组件的吧block方便外部调用
+```objective-c
+#import <UIKit/UIKit.h>
+
+@interface ToolView : UIView
+
+@property (nonatomic, copy) void(^penBlock)(void);
+@property (nonatomic, copy) void(^eraserBlock)(void);
+@property (nonatomic, copy) void(^colorBlock)(void);
+@property (nonatomic, copy) void(^undoBlock)(void);
+@property (nonatomic, copy) void(^clearBlock)(void);
+@property (nonatomic, copy) void(^saveBlock)(void);
+@property (nonatomic, copy) void(^sliderBlock)(CGFloat width);
+
+@end
+```
+
+- 在CanvasViewController里面新建一个configToolView的方法来拿到回调需要做的事情
+
+```objective-c
+-(void) configToolView {
+    
+    __weak typeof (self) weakself = self;
+    self.toolView.penBlock = ^{
+        weakself.bEraserMode = NO;
+        weakself.canvasView.color = [UIColor blackColor]; //weakself.lastColor;
+        weakself.canvasView.lineWidth = weakself.lastLineWidth;
+        
+    };
+    
+    self.toolView.eraserBlock = ^{
+        weakself.bEraserMode = YES;
+        weakself.canvasView.color = [UIColor whiteColor];
+        weakself.canvasView.lineWidth = 50;
+    };
+    
+    self.toolView.colorBlock = ^{
+        
+    };
+    
+    self.toolView.undoBlock = ^{
+        [weakself.canvasView undo];
+    };
+    
+    self.toolView.clearBlock = ^{
+        [weakself.canvasView clear];
+    };
+    
+    self.toolView.saveBlock = ^{
+        
+    };
+    
+    self.toolView.sliderBlock = ^(CGFloat width) {
+        if (!weakself.bEraserMode) {
+            weakself.canvasView.lineWidth = width;
+        }
+        weakself.lastLineWidth = width;
+        
+    };
+}
+```
+
+- 新建了变量，用于存储使用橡皮擦之前的线条是什么
+	- 3个变量
+```objective-c
+@property BOOL bEraserMode;
+@property UIColor *lastColor;
+@property CGFloat lastLineWidth;
+```
+
+- 在CanvansView.h里面新增2个外部调用的函数
+
+```objective-c
+#import <UIKit/UIKit.h>
+@interface CanvasView : UIView
+...
+-(void)undo;
+-(void)clear;
+...
+@end
+```
+
+
+
