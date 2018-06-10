@@ -21,6 +21,7 @@
 		B294AF5B20CCF3EA0002B73B /* ToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5A20CCF3EA0002B73B /* ToolView.m */; };
 		B294AF5D20CCF4050002B73B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B294AF5C20CCF4050002B73B /* README.md */; };
 		B294AF6020CCFBB50002B73B /* LineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5F20CCFBB50002B73B /* LineModel.m */; };
+		B294AF6320CD20720002B73B /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF6220CD20720002B73B /* ColorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		B294AF5C20CCF4050002B73B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B294AF5E20CCFBB50002B73B /* LineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineModel.h; sourceTree = "<group>"; };
 		B294AF5F20CCFBB50002B73B /* LineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineModel.m; sourceTree = "<group>"; };
+		B294AF6120CD20720002B73B /* ColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		B294AF6220CD20720002B73B /* ColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				B294AF5A20CCF3EA0002B73B /* ToolView.m */,
 				B294AF5E20CCFBB50002B73B /* LineModel.h */,
 				B294AF5F20CCFBB50002B73B /* LineModel.m */,
+				B294AF6120CD20720002B73B /* ColorView.h */,
+				B294AF6220CD20720002B73B /* ColorView.m */,
 			);
 			path = DrawPrj;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				B267F6AF20CC14A900B9531D /* UnBlockView.m in Sources */,
 				B267F6A320CC13DD00B9531D /* main.m in Sources */,
 				B294AF5820CCF3D30002B73B /* CanvasView.m in Sources */,
+				B294AF6320CD20720002B73B /* ColorView.m in Sources */,
 				B267F69520CC13DA00B9531D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

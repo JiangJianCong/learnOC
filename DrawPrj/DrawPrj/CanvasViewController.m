@@ -9,12 +9,13 @@
 #import "CanvasViewController.h"
 #import "CanvasView.h"
 #import "ToolView.h"
+#import "ColorView.h"
 
 @interface CanvasViewController ()
 
 @property(nonatomic, strong) CanvasView *canvasView;
-
 @property(nonatomic, strong) ToolView *toolView;
+@property(nonatomic, strong) ColorView *colorView;
 
 @property BOOL bEraserMode;
 @property UIColor *lastColor;
@@ -37,6 +38,7 @@
     
     [self.view addSubview:self.canvasView];
     [self.view addSubview:self.toolView];
+    [self.view addSubview:self.colorView];
     
     [self configToolView];
 }
@@ -67,7 +69,7 @@
     };
     
     self.toolView.colorBlock = ^{
-        
+        [weakself.colorView showAnimation];
     };
     
     self.toolView.undoBlock = ^{
@@ -128,6 +130,13 @@
         _canvasView = [[CanvasView alloc]initWithFrame:CGRectMake(20, 130, self.view.frame.size.width - 40, self.view.frame.size.height - 130 -20)];
     }
     return _canvasView;
+}
+
+-(ColorView *) colorView {
+    if (!_colorView) {
+        _colorView = [[ColorView alloc] initWithFrame:self.view.frame];
+    }
+    return _colorView;
 }
 
 @end
