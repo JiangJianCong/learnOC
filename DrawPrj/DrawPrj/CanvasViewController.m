@@ -10,6 +10,8 @@
 #import "CanvasView.h"
 #import "ToolView.h"
 #import "ColorView.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface CanvasViewController ()
 
@@ -33,17 +35,18 @@
     self.lastColor = [UIColor blackColor];
     self.lastLineWidth = 2;
     
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(self.view.center.x - 40, CGRectGetHeight(self.view.frame) - 50, 80, 50);
-    [backBtn setImage:[UIImage imageNamed:@"chahao"] forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(clickBack:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backBtn];
     
     [self.view addSubview:self.canvasView];
     [self.view addSubview:self.toolView];
     [self.view addSubview:self.colorView];
     
     [self configToolView];
+    
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.frame = CGRectMake(self.view.center.x - 40, CGRectGetHeight(self.view.frame) - 50, 80, 50);
+    [backBtn setImage:[UIImage imageNamed:@"chahao"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(clickBack:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,6 +87,7 @@
     };
     
     self.toolView.saveBlock = ^{
+        [weakself saveImageToAlbum:[weakself screenView:weakself.canvasView]];
         
     };
     
@@ -94,7 +98,43 @@
         weakself.lastLineWidth = width;
         
     };
+}
+
+-(UIImage *) screenView:(UIView *)view {
+    CGRect rect = view.frame;
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:context];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
+
+/**
+ 保存图片
+
+ @param image 返回image
+ */
+-(void) saveImageToAlbum:(UIImage *)image {
     
+    // 判断有没有相册权限
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
+        NSLog(@"没有访问权限");
+    } else {
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:),(__bridge void *)self);
+        
+        
+    }
+}
+
+-(void)image:(UIImage *) image didFinishSavingWithError:(NSError *) error contextInfo:(void*)contextInfo {
+    if (error) {
+        NSLog(@"保存图片失败");
+    } else {
+        NSLog(@"保存图片成功");
+    }
 }
 
 
@@ -110,15 +150,10 @@
     return _toolView;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
 /**
  返回键
  

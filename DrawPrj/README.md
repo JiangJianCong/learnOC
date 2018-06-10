@@ -191,3 +191,56 @@ UINavigationController *nav = [[UINavigationController alloc] initWithRootViewCo
     return _colorView;
 }
 ```
+
+### 保存到相册
+- 设置权限
+```xml
+	// 在info.pkist下加入这两项
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>使用照片</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>使用照片</string>
+	
+```
+
+- 在CanvasViewController里面加上代码
+```objective-c
+// 加入两个新的包
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+...
+// 在回调block调用
+self.toolView.saveBlock = ^{
+	[weakself saveImageToAlbum:[weakself screenView:weakself.canvasView]];
+        
+};
+...
+// 截屏
+-(UIImage *) screenView:(UIView *)view {
+    CGRect rect = view.frame;
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:context];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+...
+/**
+ 保存图片
+
+ @param image 返回image
+ */
+-(void) saveImageToAlbum:(UIImage *)image {
+    
+    // 判断有没有相册权限
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
+        NSLog(@"没有访问权限");
+    } else {
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:),(__bridge void *)self);
+        
+        
+    }
+}
+```
