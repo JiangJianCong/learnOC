@@ -8,10 +8,17 @@
 
 #import "CanvasViewController.h"
 #import "CanvasView.h"
+#import "ToolView.h"
 
 @interface CanvasViewController ()
 
 @property(nonatomic, strong) CanvasView *canvasView;
+
+@property(nonatomic, strong) ToolView *toolView;
+
+@property BOOL bEraserMode;
+@property UIColor *lastColor;
+@property CGFloat lastLineWidth;
 
 @end
 
@@ -23,17 +30,79 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 20, 80, 50);
+    backBtn.frame = CGRectMake(self.view.center.x - 40, CGRectGetHeight(self.view.frame) - 50, 80, 50);
     [backBtn setImage:[UIImage imageNamed:@"chahao"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(clickBack:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backBtn];
     
     [self.view addSubview:self.canvasView];
+    [self.view addSubview:self.toolView];
+    
+    [self configToolView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+/**
+ 拿到回调要做的事情
+ */
+-(void) configToolView {
+    
+    __weak typeof (self) weakself = self;
+    self.toolView.penBlock = ^{
+        weakself.bEraserMode = NO;
+        weakself.canvasView.color = [UIColor blackColor]; //weakself.lastColor;
+        weakself.canvasView.lineWidth = weakself.lastLineWidth;
+        
+    };
+    
+    self.toolView.eraserBlock = ^{
+        weakself.bEraserMode = YES;
+        weakself.canvasView.color = [UIColor whiteColor];
+        weakself.canvasView.lineWidth = 50;
+    };
+    
+    self.toolView.colorBlock = ^{
+        
+    };
+    
+    self.toolView.undoBlock = ^{
+        [weakself.canvasView undo];
+    };
+    
+    self.toolView.clearBlock = ^{
+        [weakself.canvasView clear];
+    };
+    
+    self.toolView.saveBlock = ^{
+        
+    };
+    
+    self.toolView.sliderBlock = ^(CGFloat width) {
+        if (!weakself.bEraserMode) {
+            weakself.canvasView.lineWidth = width;
+        }
+        weakself.lastLineWidth = width;
+        
+    };
+    
+}
+
+
+/**
+ 初始化ToolView
+
+ @return 返回初始化之后的ToolView
+ */
+-(ToolView *)toolView {
+    if (!_toolView) {
+        _toolView = [[ToolView alloc] initWithFrame:CGRectMake(20, 30, self.view.frame.size.width - 40, 100)];
+    }
+    return _toolView;
 }
 
 /*
