@@ -16,6 +16,11 @@
 		B267F6AF20CC14A900B9531D /* UnBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6AE20CC14A900B9531D /* UnBlockView.m */; };
 		B267F6B220CC1B6300B9531D /* NodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6B120CC1B6300B9531D /* NodeView.m */; };
 		B267F6B820CC27E900B9531D /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B267F6B720CC27E900B9531D /* FunctionViewController.m */; };
+		B294AF5520CCEE670002B73B /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5420CCEE670002B73B /* CanvasViewController.m */; };
+		B294AF5820CCF3D30002B73B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5720CCF3D30002B73B /* CanvasView.m */; };
+		B294AF5B20CCF3EA0002B73B /* ToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5A20CCF3EA0002B73B /* ToolView.m */; };
+		B294AF5D20CCF4050002B73B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B294AF5C20CCF4050002B73B /* README.md */; };
+		B294AF6020CCFBB50002B73B /* LineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B294AF5F20CCFBB50002B73B /* LineModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,15 @@
 		B267F6B120CC1B6300B9531D /* NodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeView.m; sourceTree = "<group>"; };
 		B267F6B620CC27E900B9531D /* FunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
 		B267F6B720CC27E900B9531D /* FunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
+		B294AF5320CCEE670002B73B /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		B294AF5420CCEE670002B73B /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		B294AF5620CCF3D30002B73B /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		B294AF5720CCF3D30002B73B /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		B294AF5920CCF3EA0002B73B /* ToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolView.h; sourceTree = "<group>"; };
+		B294AF5A20CCF3EA0002B73B /* ToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolView.m; sourceTree = "<group>"; };
+		B294AF5C20CCF4050002B73B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B294AF5E20CCFBB50002B73B /* LineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineModel.h; sourceTree = "<group>"; };
+		B294AF5F20CCFBB50002B73B /* LineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		B267F68720CC13DA00B9531D = {
 			isa = PBXGroup;
 			children = (
+				B294AF5C20CCF4050002B73B /* README.md */,
 				B267F69220CC13DA00B9531D /* DrawPrj */,
 				B267F69120CC13DA00B9531D /* Products */,
 			);
@@ -83,6 +98,14 @@
 				B267F6B120CC1B6300B9531D /* NodeView.m */,
 				B267F6B620CC27E900B9531D /* FunctionViewController.h */,
 				B267F6B720CC27E900B9531D /* FunctionViewController.m */,
+				B294AF5320CCEE670002B73B /* CanvasViewController.h */,
+				B294AF5420CCEE670002B73B /* CanvasViewController.m */,
+				B294AF5620CCF3D30002B73B /* CanvasView.h */,
+				B294AF5720CCF3D30002B73B /* CanvasView.m */,
+				B294AF5920CCF3EA0002B73B /* ToolView.h */,
+				B294AF5A20CCF3EA0002B73B /* ToolView.m */,
+				B294AF5E20CCFBB50002B73B /* LineModel.h */,
+				B294AF5F20CCFBB50002B73B /* LineModel.m */,
 			);
 			path = DrawPrj;
 			sourceTree = "<group>";
@@ -153,6 +176,7 @@
 			files = (
 				B267F6A020CC13DD00B9531D /* LaunchScreen.storyboard in Resources */,
 				B267F69D20CC13DD00B9531D /* Assets.xcassets in Resources */,
+				B294AF5D20CCF4050002B73B /* README.md in Resources */,
 				B267F69B20CC13DA00B9531D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,9 +190,13 @@
 			files = (
 				B267F6B820CC27E900B9531D /* FunctionViewController.m in Sources */,
 				B267F69820CC13DA00B9531D /* ViewController.m in Sources */,
+				B294AF5B20CCF3EA0002B73B /* ToolView.m in Sources */,
 				B267F6B220CC1B6300B9531D /* NodeView.m in Sources */,
+				B294AF5520CCEE670002B73B /* CanvasViewController.m in Sources */,
+				B294AF6020CCFBB50002B73B /* LineModel.m in Sources */,
 				B267F6AF20CC14A900B9531D /* UnBlockView.m in Sources */,
 				B267F6A320CC13DD00B9531D /* main.m in Sources */,
+				B294AF5820CCF3D30002B73B /* CanvasView.m in Sources */,
 				B267F69520CC13DA00B9531D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

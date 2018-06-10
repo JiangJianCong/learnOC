@@ -1,24 +1,26 @@
 //
-//  FunctionViewController.m
+//  CanvasViewController.m
 //  DrawPrj
 //
-//  Created by space on 2018/6/9.
+//  Created by space on 2018/6/10.
 //  Copyright © 2018 space. All rights reserved.
 //
 
-#import "FunctionViewController.h"
 #import "CanvasViewController.h"
+#import "CanvasView.h"
 
-@interface FunctionViewController ()
+@interface CanvasViewController ()
+
+@property(nonatomic, strong) CanvasView *canvasView;
 
 @end
 
-@implementation FunctionViewController
+@implementation CanvasViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 20, 80, 50);
@@ -26,13 +28,7 @@
     [backBtn addTarget:self action:@selector(clickBack:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backBtn];
     
-    UIButton *canvasBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    canvasBtn.frame = CGRectMake(self.view.center.x - 50, self.view.center.y, 100, 50);
-    [canvasBtn setTitle:@"画图板" forState:UIControlStateNormal];
-    [canvasBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [canvasBtn addTarget:self action:@selector(clickCanvas:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:canvasBtn];
-    
+    [self.view addSubview:self.canvasView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,21 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-/**
- 返回键
-
- @param sender 返回按钮
- */
--(void) clickBack:(id) sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void) clickCanvas:(id) sender {
-    CanvasViewController *vc = [[CanvasViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
 /*
 #pragma mark - Navigation
 
@@ -64,5 +45,20 @@
     // Pass the selected object to the new view controller.
 }
 */
+/**
+ 返回键
+ 
+ @param sender 传入的返回键
+ */
+-(void) clickBack:(id) sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(CanvasView *) canvasView {
+    if (!_canvasView) {
+        _canvasView = [[CanvasView alloc]initWithFrame:CGRectMake(20, 130, self.view.frame.size.width - 40, self.view.frame.size.height - 130 -20)];
+    }
+    return _canvasView;
+}
 
 @end

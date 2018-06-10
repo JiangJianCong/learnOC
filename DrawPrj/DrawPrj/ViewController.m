@@ -29,7 +29,9 @@
             if (success) {
                 // 跳转到新的页面
                 FunctionViewController *vc = [[FunctionViewController alloc] init];
-                [self presentViewController:vc animated:YES completion:nil];
+                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+                [nav setNavigationBarHidden:YES];
+                [self presentViewController:nav animated:YES completion:nil];
             }
         }];
         [alert addAction:action];
