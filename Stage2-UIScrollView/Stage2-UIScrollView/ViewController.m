@@ -12,6 +12,7 @@
     UIScrollView *scrollview;
     NSTimer *timer;
     int imageIndex;
+    UIPageControl *pageControl;
 }
 
 @end
@@ -45,10 +46,17 @@
         [scrollview addSubview:imageView];
     }
     [self.view addSubview:scrollview];
+    pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 160, 320, 20)];
+    pageControl.numberOfPages = 4;
+    pageControl.currentPage = 0;
+    pageControl.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:pageControl];
+    
     timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(imagePlay) userInfo:nil repeats:true];
     imageIndex = 0;
 }
 -(void)imagePlay {
+    pageControl.currentPage = imageIndex;
     scrollview.contentOffset = CGPointMake(imageIndex*414, 0);
     imageIndex++;
     if (imageIndex >= 4) {

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Stage2-&#x5176;&#x4ed6;&#x7ec4;&#x4ef6;/Stage2-&#x5176;&#x4ed6;&#x7ec4;&#x4ef6;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Stage2-UISearchBar/Stage2-UISearchBar.xcodeproj">
    </FileRef>
    <FileRef
