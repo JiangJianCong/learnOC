@@ -83,3 +83,51 @@ scrollview1.delegate = self;
 }
 ```
 
+
+
+- 无限循环轮播图
+
+1. 时刻监听
+2. 找到合适的位置进行跳转
+3. 设置5个页面，使得跳转更流畅 2 0 1 2 0 设置第一页在(414,0)这个坐标，到了最后一张图就跳		转
+```objective-c
+...
+-(void) scrollview3 {
+    UIScrollView *scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 50, 414, 200)];
+    scrollview.contentSize = CGSizeMake(414*5, 200);
+    scrollview.delegate = self;
+    scrollview.pagingEnabled = true; // 分页
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    label.backgroundColor = [UIColor redColor];
+    label.text = @"2";
+    [scrollview addSubview:label];
+    scrollview.contentOffset = CGPointMake(414, 0);
+    
+    for (int i = 0; i < 4 ; i++ ) {
+        float labelx = (i+1)*414;
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(labelx, 0, 100, 100)];
+        label.backgroundColor = [UIColor redColor];
+        label.text = [NSString stringWithFormat:@"%d",i%3];
+        [scrollview addSubview:label];
+    }
+    [self.view addSubview: scrollview];
+}
+...
+/**
+ 监听内容
+*/
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //    float x = scrollView.contentOffset.x;
+    //    NSLog(@"x%f",x);
+    float x = scrollView.contentOffset.x;
+    if (x == 414*4) {
+        CGPoint point = CGPointMake(414, 0);
+        scrollView.contentOffset = point;
+    } else if(x==0){
+        CGPoint point = CGPointMake(414*3, 0);
+        scrollView.contentOffset = point;
+    }
+    
+}
+
+```

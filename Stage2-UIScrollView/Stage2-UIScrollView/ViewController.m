@@ -18,7 +18,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //    [self scrollView1];
-    [self scrollview2];
+//    [self scrollview2];
+    [self scrollview3];
+}
+
+
+/**
+ 循环监听
+ 1、时刻监听：回调
+ 2、合适的位置：跳转逻辑
+ 3、设置5个页面 2 0 1 2 0看起来跳转更流畅
+ */
+-(void) scrollview3 {
+    UIScrollView *scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 50, 414, 200)];
+    scrollview.contentSize = CGSizeMake(414*5, 200);
+    scrollview.delegate = self;
+    scrollview.pagingEnabled = true; // 分页
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    label.backgroundColor = [UIColor redColor];
+    label.text = @"2";
+    [scrollview addSubview:label];
+    scrollview.contentOffset = CGPointMake(414, 0);
+    
+    for (int i = 0; i < 4 ; i++ ) {
+        float labelx = (i+1)*414;
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(labelx, 0, 100, 100)];
+        label.backgroundColor = [UIColor redColor];
+        label.text = [NSString stringWithFormat:@"%d",i%3];
+        [scrollview addSubview:label];
+    }
+    [self.view addSubview: scrollview];
 }
 
 
@@ -90,8 +119,16 @@
  @param scrollView 监听的scrollview
  */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //    float x = scrollView.contentOffset.x;
+    //    NSLog(@"x%f",x);
     float x = scrollView.contentOffset.x;
-    NSLog(@"x%f",x);
+    if (x == 414*4) {
+        CGPoint point = CGPointMake(414, 0);
+        scrollView.contentOffset = point;
+    } else if(x==0){
+        CGPoint point = CGPointMake(414*3, 0);
+        scrollView.contentOffset = point;
+    }
     
 }
 
