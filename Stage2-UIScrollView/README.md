@@ -131,3 +131,39 @@ scrollview1.delegate = self;
 }
 
 ```
+
+- 新闻轮播图
+```objective-c
+// 定义一个NSTimer 和 一个imageIndex
+@interface ViewController ()<UIScrollViewDelegate> {
+    UIScrollView *scrollview;
+    NSTimer *timer;
+    int imageIndex;
+}
+...
+-(void)scrollview5 {
+    scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 414, 200)];
+    scrollview.contentSize = CGSizeMake(414 * 4, 200);
+    scrollview.backgroundColor = [UIColor clearColor]; // 清除背景
+    scrollview.pagingEnabled = true;
+    scrollview.delegate = self;
+    for (int index = 0; index < 4; index++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(414*index, 0, 414, 200)];
+        NSString *imagePath = [NSString stringWithFormat:@"%d.jpg",index+1];
+        imageView.image = [UIImage imageNamed:imagePath];
+        [scrollview addSubview:imageView];
+    }
+    [self.view addSubview:scrollview];
+    timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(imagePlay) userInfo:nil repeats:true];
+    imageIndex = 0;
+}
+// 定时器的监听方法
+-(void)imagePlay {
+    scrollview.contentOffset = CGPointMake(imageIndex*414, 0);
+    imageIndex++;
+    if (imageIndex >= 4) {
+        imageIndex = 0;
+    }
+}
+
+```

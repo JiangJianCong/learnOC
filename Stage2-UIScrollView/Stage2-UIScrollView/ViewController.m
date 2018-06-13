@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UIScrollViewDelegate>
+@interface ViewController ()<UIScrollViewDelegate> {
+    UIScrollView *scrollview;
+    NSTimer *timer;
+    int imageIndex;
+}
 
 @end
 
@@ -19,9 +23,38 @@
     // Do any additional setup after loading the view, typically from a nib.
     //    [self scrollView1];
 //    [self scrollview2];
-    [self scrollview3];
+    [self scrollview5];
 }
 
+
+/**
+ 1、每次拖拽，展示一张图片
+ 2、自动播放一张图片
+ 3、使用到 UIScrollView UIImageView NSTimer 循环滚动
+ */
+-(void)scrollview5 {
+    scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 414, 200)];
+    scrollview.contentSize = CGSizeMake(414 * 4, 200);
+    scrollview.backgroundColor = [UIColor clearColor]; // 清除背景
+    scrollview.pagingEnabled = true;
+    scrollview.delegate = self;
+    for (int index = 0; index < 4; index++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(414*index, 0, 414, 200)];
+        NSString *imagePath = [NSString stringWithFormat:@"%d.jpg",index+1];
+        imageView.image = [UIImage imageNamed:imagePath];
+        [scrollview addSubview:imageView];
+    }
+    [self.view addSubview:scrollview];
+    timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(imagePlay) userInfo:nil repeats:true];
+    imageIndex = 0;
+}
+-(void)imagePlay {
+    scrollview.contentOffset = CGPointMake(imageIndex*414, 0);
+    imageIndex++;
+    if (imageIndex >= 4) {
+        imageIndex = 0;
+    }
+}
 
 /**
  循环监听
@@ -48,7 +81,9 @@
         [scrollview addSubview:label];
     }
     [self.view addSubview: scrollview];
+    
 }
+
 
 
 /**
