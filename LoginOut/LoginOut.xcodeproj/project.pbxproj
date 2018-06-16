@@ -13,6 +13,7 @@
 		B251481420D501EF0055A343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B251481320D501EF0055A343 /* Assets.xcassets */; };
 		B251481720D501EF0055A343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B251481520D501EF0055A343 /* LaunchScreen.storyboard */; };
 		B251481A20D501EF0055A343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B251481920D501EF0055A343 /* main.m */; };
+		B268FFA720D503C5005573F4 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B268FFA620D503C4005573F4 /* LogoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B251481620D501EF0055A343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B251481820D501EF0055A343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B251481920D501EF0055A343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B268FFA520D503C4005573F4 /* LogoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
+		B268FFA620D503C4005573F4 /* LogoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				B251481520D501EF0055A343 /* LaunchScreen.storyboard */,
 				B251481820D501EF0055A343 /* Info.plist */,
 				B251481920D501EF0055A343 /* main.m */,
+				B268FFA520D503C4005573F4 /* LogoutViewController.h */,
+				B268FFA620D503C4005573F4 /* LogoutViewController.m */,
 			);
 			path = LoginOut;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			files = (
 				B251480F20D501EE0055A343 /* ViewController.m in Sources */,
 				B251481A20D501EF0055A343 /* main.m in Sources */,
+				B268FFA720D503C5005573F4 /* LogoutViewController.m in Sources */,
 				B251480C20D501EE0055A343 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
