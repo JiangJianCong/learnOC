@@ -13,6 +13,7 @@
 		B25147EF20D4DA570055A343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25147EE20D4DA570055A343 /* Assets.xcassets */; };
 		B25147F220D4DA570055A343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25147F020D4DA570055A343 /* LaunchScreen.storyboard */; };
 		B25147F520D4DA570055A343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B25147F420D4DA570055A343 /* main.m */; };
+		B25147FD20D4EFE70055A343 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25147FC20D4EFE70055A343 /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B25147F120D4DA570055A343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B25147F320D4DA570055A343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25147F420D4DA570055A343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B25147FB20D4EFE70055A343 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		B25147FC20D4EFE70055A343 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				B25147F020D4DA570055A343 /* LaunchScreen.storyboard */,
 				B25147F320D4DA570055A343 /* Info.plist */,
 				B25147F420D4DA570055A343 /* main.m */,
+				B25147FB20D4EFE70055A343 /* NewViewController.h */,
+				B25147FC20D4EFE70055A343 /* NewViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				B25147EA20D4DA560055A343 /* ViewController.m in Sources */,
 				B25147F520D4DA570055A343 /* main.m in Sources */,
 				B25147E720D4DA560055A343 /* AppDelegate.m in Sources */,
+				B25147FD20D4EFE70055A343 /* NewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
