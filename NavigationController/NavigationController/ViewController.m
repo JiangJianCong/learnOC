@@ -42,6 +42,24 @@
     
     self.navigationItem.title = @"Main0";
     self.view.backgroundColor = [UIColor grayColor];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.leftBarButtonItem = item;
+    // 导航栏颜色 : 半透明 有颜色梯度
+//    self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
+    
+    // color 导航栏的颜色 ： 正
+//    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    
+    // UIBarButtonItem颜色
+//    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    
+    
+    NSDictionary *colorDic = [[NSDictionary alloc] initWithObjectsAndKeys:[UIColor greenColor],NSForegroundColorAttributeName, nil];
+    
+    self.navigationController.navigationBar.titleTextAttributes = colorDic;
+    
+    
+    
     // push 0->1
     // push 0->2
     // push 1->2
@@ -59,7 +77,19 @@
     
     self.view.tag = 10000;
     
+    // 工具栏
+    [self.navigationController setToolbarHidden:false];
+//    [self.navigationController setNavigationBarHidden:true];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(buttonAction1)];
     
+    
+    // 间隔 UIBarButtonSystemItemFixedSpace 宽度50
+    UIBarButtonItem *barButtonItem4 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:self action:nil];
+    barButtonItem4.width = 50;
+    
+    
+    NSArray *items = [[NSArray alloc]initWithObjects:barButtonItem,barButtonItem4,barButtonItem,barButtonItem, nil];
+    [self setToolbarItems:items];
 }
 
 -(void) buttonAction2 {

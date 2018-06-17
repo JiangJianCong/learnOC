@@ -33,6 +33,27 @@
     [self.view addSubview:bt2];
     
     
+    
+    // UIBarButtonItem
+    // 1 样式 2 响应对象 3 action  4初始化
+//    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(buttonAction2)];
+
+//    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(buttonAction2)];
+
+//     根据自定义view来添加UIBarButtonItem
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 44)];
+    view.backgroundColor = [UIColor redColor];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithCustomView:view];
+    
+//    // 根据图片添加 主要渲染部分
+//    UIImage *image = [UIImage imageNamed:@"1.jpg"];
+//    // UIImage -> UIBarButtonItem 渲染
+//    UIImage *newImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithImage:newImage style:UIBarButtonItemStyleDone target:self action:@selector(buttonAction2)];
+    
+    
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+    
 }
 -(void)buttonAction2 {
     // 从哪个地方来 回哪里去
