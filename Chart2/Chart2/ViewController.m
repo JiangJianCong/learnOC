@@ -12,6 +12,7 @@
 @interface ViewController (){
     Quartz2d *quartz2d;
 }
+- (IBAction)reloadAllData:(id)sender;
 
 @end
 
@@ -32,4 +33,6 @@
 }
 
 
+- (IBAction)reloadAllData:(id)sender {
+}
 @end

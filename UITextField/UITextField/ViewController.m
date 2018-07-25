@@ -13,8 +13,6 @@
     MyTextField *textField1;
     MyTextField *textField2;
 }
-- (IBAction)loginAction:(id)sender;
-
 
 
 
@@ -130,4 +128,9 @@
 }
 
 
+- (IBAction)reload:(id)sender {
+}
+
+- (IBAction)reloadAllData:(id)sender {
+}
 @end

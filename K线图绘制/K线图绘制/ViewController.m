@@ -12,6 +12,7 @@
 #import "QuartzChart.h"
 
 @interface ViewController ()
+- (IBAction)reloadAllData:(id)sender;
 
 @end
 
@@ -137,4 +138,6 @@
 }
 
 
+- (IBAction)reloadAllData:(id)sender {
+}
 @end
