@@ -34,7 +34,7 @@
     }
     
     MyCollectionViewLayout *layout = [[MyCollectionViewLayout alloc] init];
-    layout.delegate = self; 
+    layout.delegate = self;  
     mcollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height-20) collectionViewLayout:layout];
     mcollectionView.dataSource = self;
     mcollectionView.delegate = self;
