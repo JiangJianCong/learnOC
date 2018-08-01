@@ -20,6 +20,17 @@
 		B2246C9B210B152C00459D5C /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246C9A210B152C00459D5C /* BusinessViewController.m */; };
 		B2246C9D210B21E200459D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2246C9C210B21E200459D5C /* Assets.xcassets */; };
 		B2246CA1210B388F00459D5C /* CitySelectedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CA0210B388F00459D5C /* CitySelectedButton.m */; };
+		B2246CA4210C4CA100459D5C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CA3210C4CA100459D5C /* LoginViewController.m */; };
+		B2246CA7210C60D800459D5C /* CitySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CA6210C60D800459D5C /* CitySelectViewController.m */; };
+		B2246CAA210C619700459D5C /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2246CA9210C619700459D5C /* city.plist */; };
+		B2246CAD210ED02E00459D5C /* MyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CAC210ED02E00459D5C /* MyDataSource.m */; };
+		B2246CB0210ED59F00459D5C /* ClassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CAF210ED59F00459D5C /* ClassButton.m */; };
+		B2246CB4210EEF5B00459D5C /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CB2210EEF5B00459D5C /* ProductTableViewCell.m */; };
+		B2246CB5210EEF5B00459D5C /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246CB3210EEF5B00459D5C /* ProductTableViewCell.xib */; };
+		B2246CB8210EFB9A00459D5C /* ProductDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CB7210EFB9A00459D5C /* ProductDataSource.m */; };
+		B2246CBB210F0A1600459D5C /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CBA210F0A1600459D5C /* ItemViewController.m */; };
+		B2246CBE21100D2100459D5C /* StartRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CBD21100D2100459D5C /* StartRateView.m */; };
+		B2246CC121115EC100459D5C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CC021115EC100459D5C /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +58,26 @@
 		B2246C9C210B21E200459D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2246C9F210B388F00459D5C /* CitySelectedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectedButton.h; sourceTree = "<group>"; };
 		B2246CA0210B388F00459D5C /* CitySelectedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectedButton.m; sourceTree = "<group>"; };
+		B2246CA2210C4CA100459D5C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B2246CA3210C4CA100459D5C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B2246CA5210C60D800459D5C /* CitySelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectViewController.h; sourceTree = "<group>"; };
+		B2246CA6210C60D800459D5C /* CitySelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectViewController.m; sourceTree = "<group>"; };
+		B2246CA9210C619700459D5C /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		B2246CAB210ED02E00459D5C /* MyDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataSource.h; sourceTree = "<group>"; };
+		B2246CAC210ED02E00459D5C /* MyDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataSource.m; sourceTree = "<group>"; };
+		B2246CAE210ED59F00459D5C /* ClassButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassButton.h; sourceTree = "<group>"; };
+		B2246CAF210ED59F00459D5C /* ClassButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassButton.m; sourceTree = "<group>"; };
+		B2246CB1210EEF5B00459D5C /* ProductTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		B2246CB2210EEF5B00459D5C /* ProductTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		B2246CB3210EEF5B00459D5C /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		B2246CB6210EFB9A00459D5C /* ProductDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDataSource.h; sourceTree = "<group>"; };
+		B2246CB7210EFB9A00459D5C /* ProductDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDataSource.m; sourceTree = "<group>"; };
+		B2246CB9210F0A1600459D5C /* ItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		B2246CBA210F0A1600459D5C /* ItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		B2246CBC21100D2100459D5C /* StartRateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartRateView.h; sourceTree = "<group>"; };
+		B2246CBD21100D2100459D5C /* StartRateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartRateView.m; sourceTree = "<group>"; };
+		B2246CBF21115EC100459D5C /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		B2246CC021115EC100459D5C /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +110,7 @@
 		B2246C72210B021100459D5C /* 团购 */ = {
 			isa = PBXGroup;
 			children = (
+				B2246CA8210C618600459D5C /* Model */,
 				B2246C9E210B387200459D5C /* View */,
 				B2246C8C210B0DA900459D5C /* ViewController */,
 				B2246C73210B021100459D5C /* AppDelegate.h */,
@@ -109,6 +141,14 @@
 				B2246C97210B151F00459D5C /* UserViewController.m */,
 				B2246C99210B152C00459D5C /* BusinessViewController.h */,
 				B2246C9A210B152C00459D5C /* BusinessViewController.m */,
+				B2246CA2210C4CA100459D5C /* LoginViewController.h */,
+				B2246CA3210C4CA100459D5C /* LoginViewController.m */,
+				B2246CA5210C60D800459D5C /* CitySelectViewController.h */,
+				B2246CA6210C60D800459D5C /* CitySelectViewController.m */,
+				B2246CB9210F0A1600459D5C /* ItemViewController.h */,
+				B2246CBA210F0A1600459D5C /* ItemViewController.m */,
+				B2246CBF21115EC100459D5C /* WebViewController.h */,
+				B2246CC021115EC100459D5C /* WebViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -118,8 +158,27 @@
 			children = (
 				B2246C9F210B388F00459D5C /* CitySelectedButton.h */,
 				B2246CA0210B388F00459D5C /* CitySelectedButton.m */,
+				B2246CAE210ED59F00459D5C /* ClassButton.h */,
+				B2246CAF210ED59F00459D5C /* ClassButton.m */,
+				B2246CB1210EEF5B00459D5C /* ProductTableViewCell.h */,
+				B2246CB2210EEF5B00459D5C /* ProductTableViewCell.m */,
+				B2246CB3210EEF5B00459D5C /* ProductTableViewCell.xib */,
+				B2246CBC21100D2100459D5C /* StartRateView.h */,
+				B2246CBD21100D2100459D5C /* StartRateView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B2246CA8210C618600459D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CA9210C619700459D5C /* city.plist */,
+				B2246CAB210ED02E00459D5C /* MyDataSource.h */,
+				B2246CAC210ED02E00459D5C /* MyDataSource.m */,
+				B2246CB6210EFB9A00459D5C /* ProductDataSource.h */,
+				B2246CB7210EFB9A00459D5C /* ProductDataSource.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2246C80210B021300459D5C /* LaunchScreen.storyboard in Resources */,
+				B2246CAA210C619700459D5C /* city.plist in Resources */,
+				B2246CB5210EEF5B00459D5C /* ProductTableViewCell.xib in Resources */,
 				B2246C9D210B21E200459D5C /* Assets.xcassets in Resources */,
 				B2246C7B210B021100459D5C /* Main.storyboard in Resources */,
 			);
@@ -194,13 +255,22 @@
 			files = (
 				B2246C78210B021100459D5C /* ViewController.m in Sources */,
 				B2246CA1210B388F00459D5C /* CitySelectedButton.m in Sources */,
+				B2246CC121115EC100459D5C /* WebViewController.m in Sources */,
+				B2246CB0210ED59F00459D5C /* ClassButton.m in Sources */,
+				B2246CBE21100D2100459D5C /* StartRateView.m in Sources */,
 				B2246C92210B150100459D5C /* BaseViewController.m in Sources */,
 				B2246C83210B021300459D5C /* main.m in Sources */,
 				B2246C9B210B152C00459D5C /* BusinessViewController.m in Sources */,
+				B2246CA7210C60D800459D5C /* CitySelectViewController.m in Sources */,
 				B2246C75210B021100459D5C /* AppDelegate.m in Sources */,
 				B2246C8F210B0E5600459D5C /* MainViewController.m in Sources */,
+				B2246CBB210F0A1600459D5C /* ItemViewController.m in Sources */,
+				B2246CB4210EEF5B00459D5C /* ProductTableViewCell.m in Sources */,
+				B2246CB8210EFB9A00459D5C /* ProductDataSource.m in Sources */,
 				B2246C98210B151F00459D5C /* UserViewController.m in Sources */,
 				B2246C95210B151500459D5C /* HomeViewController.m in Sources */,
+				B2246CA4210C4CA100459D5C /* LoginViewController.m in Sources */,
+				B2246CAD210ED02E00459D5C /* MyDataSource.m in Sources */,
 				B2246C8B210B060700459D5C /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
