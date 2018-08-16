@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A661018BB675A2D2866E81 /* libPods-PhotoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC2B62699D208EBB4D3C55E /* libPods-PhotoProject.a */; };
+		B2407957212566ED008CCE2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2407956212566ED008CCE2C /* AppDelegate.m */; };
 		B2DB16BD212558AC002090ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB16BC212558AC002090ED /* ViewController.m */; };
 		B2DB16D821255BA3002090ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D021255BA3002090ED /* Assets.xcassets */; };
 		B2DB16D921255BA3002090ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D121255BA3002090ED /* LaunchScreen.storyboard */; };
 		B2DB16DA21255BA3002090ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D321255BA3002090ED /* Main.storyboard */; };
 		B2DB16DB21255BA3002090ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB16D521255BA3002090ED /* main.m */; };
-		B2DB16DC21255BA3002090ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB16D621255BA3002090ED /* AppDelegate.m */; };
 		B2DB16DD21255BA3002090ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D721255BA3002090ED /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EDCB3EB55C5C364FFE27207 /* Pods-PhotoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoProject/Pods-PhotoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4686AD7212CD13425E92D902 /* Pods-PhotoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoProject/Pods-PhotoProject.release.xcconfig"; sourceTree = "<group>"; };
+		B2407955212566ED008CCE2C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2407956212566ED008CCE2C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2DB16B5212558AC002090ED /* PhotoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DB16BB212558AC002090ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B2DB16BC212558AC002090ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B2DB16CF21255BA3002090ED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2DB16D021255BA3002090ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2DB16D221255BA3002090ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2DB16D421255BA3002090ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2DB16D521255BA3002090ED /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B2DB16D621255BA3002090ED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2DB16D721255BA3002090ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC2B62699D208EBB4D3C55E /* libPods-PhotoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A661018BB675A2D2866E81 /* libPods-PhotoProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CE1A6E3196C4F22754E3887 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EDCB3EB55C5C364FFE27207 /* Pods-PhotoProject.debug.xcconfig */,
+				4686AD7212CD13425E92D902 /* Pods-PhotoProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2407954212566ED008CCE2C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B2407955212566ED008CCE2C /* AppDelegate.h */,
+				B2407956212566ED008CCE2C /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		B2DB16AC212558AC002090ED = {
 			isa = PBXGroup;
 			children = (
 				B2DB16B7212558AC002090ED /* PhotoProject */,
 				B2DB16B6212558AC002090ED /* Products */,
+				6CE1A6E3196C4F22754E3887 /* Pods */,
+				C8EF6DA94F86FB287F5A5D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,12 +95,10 @@
 		B2DB16CE21255BA3002090ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2DB16CF21255BA3002090ED /* AppDelegate.h */,
 				B2DB16D021255BA3002090ED /* Assets.xcassets */,
 				B2DB16D121255BA3002090ED /* LaunchScreen.storyboard */,
 				B2DB16D321255BA3002090ED /* Main.storyboard */,
 				B2DB16D521255BA3002090ED /* main.m */,
-				B2DB16D621255BA3002090ED /* AppDelegate.m */,
 				B2DB16D721255BA3002090ED /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -84,6 +107,7 @@
 		B2DB16DE21255C13002090ED /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B2407954212566ED008CCE2C /* Other */,
 				B2DB16DF21255C13002090ED /* Home */,
 				B2DB16E021255C13002090ED /* Me */,
 				B2DB16E121255C13002090ED /* Base */,
@@ -112,6 +136,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		C8EF6DA94F86FB287F5A5D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2B62699D208EBB4D3C55E /* libPods-PhotoProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2DB16CB212558B0002090ED /* Build configuration list for PBXNativeTarget "PhotoProject" */;
 			buildPhases = (
+				F0C1DC924C343094304DA7CD /* [CP] Check Pods Manifest.lock */,
 				B2DB16B1212558AC002090ED /* Sources */,
 				B2DB16B2212558AC002090ED /* Frameworks */,
 				B2DB16B3212558AC002090ED /* Resources */,
@@ -178,6 +211,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F0C1DC924C343094304DA7CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2DB16B1212558AC002090ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,7 +239,7 @@
 			files = (
 				B2DB16BD212558AC002090ED /* ViewController.m in Sources */,
 				B2DB16DB21255BA3002090ED /* main.m in Sources */,
-				B2DB16DC21255BA3002090ED /* AppDelegate.m in Sources */,
+				B2407957212566ED008CCE2C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +377,7 @@
 		};
 		B2DB16CC212558B0002090ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDCB3EB55C5C364FFE27207 /* Pods-PhotoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +394,7 @@
 		};
 		B2DB16CD212558B0002090ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4686AD7212CD13425E92D902 /* Pods-PhotoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
