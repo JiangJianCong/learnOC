@@ -1,0 +1,19 @@
+//
+//  yingke.pch
+//  space-inke
+//
+//  Created by space on 2018/8/1.
+//  Copyright © 2018 space. All rights reserved.
+//
+
+#ifndef yingke_pch
+#define yingke_pch
+
+#import "Masonry.h"
+#import "SPACEMacros.h"
+#import "YYKit.h"
+#import "APIConfig.h"
+#import "MJExtension.h"
+#import "UIImageView+SDWebImage.h"
+
+#endif /* yingke_pch */

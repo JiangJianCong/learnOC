@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DDAFEF8A0F8BA5D2F28CB88 /* libPods-space-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7891E459BDCCB5E4F29C3B67 /* libPods-space-inke.a */; };
+		B21F3F7121193EA8009C1F30 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3F6E21193EA8009C1F30 /* UIImageView+SDWebImage.m */; };
+		B21F3F7221193EA8009C1F30 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3F7021193EA8009C1F30 /* HttpTool.m */; };
+		B21F3F752119E29C009C1F30 /* SPACEBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3F742119E29C009C1F30 /* SPACEBaseHandler.m */; };
+		B21F3F782119E3BC009C1F30 /* SPACELiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3F772119E3BC009C1F30 /* SPACELiveHandler.m */; };
+		B2246CD6211185F400459D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2246CD4211185F400459D5C /* Main.storyboard */; };
+		B2246CDB211185F700459D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2246CD9211185F700459D5C /* LaunchScreen.storyboard */; };
+		B2246CDE211185F700459D5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CDD211185F700459D5C /* main.m */; };
+		B2246D02211188E400459D5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246CF2211188E400459D5C /* AppDelegate.m */; };
+		B2246D052111895600459D5C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2246D042111895600459D5C /* Default-568h@2x.png */; };
+		B2246D092111CB7700459D5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D082111CB7700459D5C /* ViewController.m */; };
+		B2246D0B2111DB4600459D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2246D0A2111DB4600459D5C /* Assets.xcassets */; };
+		B2246D122111E08B00459D5C /* SPACETabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D112111E08B00459D5C /* SPACETabBarViewController.m */; };
+		B2246D152111E0AC00459D5C /* SPACETabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D142111E0AC00459D5C /* SPACETabBar.m */; };
+		B2246D182112D54400459D5C /* SPACEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D172112D54400459D5C /* SPACEBaseViewController.m */; };
+		B2246D1C2112D5B500459D5C /* SPACEMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D1A2112D5B500459D5C /* SPACEMainViewController.m */; };
+		B2246D1D2112D5B500459D5C /* SPACEMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246D1B2112D5B500459D5C /* SPACEMainViewController.xib */; };
+		B2246D212112D5D200459D5C /* SPACEMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D1F2112D5D200459D5C /* SPACEMeViewController.m */; };
+		B2246D222112D5D200459D5C /* SPACEMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246D202112D5D200459D5C /* SPACEMeViewController.xib */; };
+		B2246D252112D70D00459D5C /* SPACEBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D242112D70D00459D5C /* SPACEBaseNavViewController.m */; };
+		B2246D292112E56300459D5C /* SPACELaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D272112E56300459D5C /* SPACELaunchViewController.m */; };
+		B2246D2A2112E56300459D5C /* SPACELaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246D282112E56300459D5C /* SPACELaunchViewController.xib */; };
+		B2246D2E2112F5DE00459D5C /* SPACEFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D2C2112F5DE00459D5C /* SPACEFocuseViewController.m */; };
+		B2246D2F2112F5DE00459D5C /* SPACEFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246D2D2112F5DE00459D5C /* SPACEFocuseViewController.xib */; };
+		B2246D332112F60200459D5C /* SPACEHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D312112F60200459D5C /* SPACEHotViewController.m */; };
+		B2246D382112F61E00459D5C /* SPACENearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D362112F61E00459D5C /* SPACENearViewController.m */; };
+		B2246D392112F61E00459D5C /* SPACENearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2246D372112F61E00459D5C /* SPACENearViewController.xib */; };
+		B2246D3C2118065000459D5C /* SPACEMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246D3B2118065000459D5C /* SPACEMainTopView.m */; };
+		B23A47CC211AD422000DB5D1 /* SPACELive.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A47CB211AD422000DB5D1 /* SPACELive.m */; };
+		B23A47CF211AD49A000DB5D1 /* SPACECreator.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A47CE211AD49A000DB5D1 /* SPACECreator.m */; };
+		B23A47D2211AD91C000DB5D1 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A47D1211AD91B000DB5D1 /* MJExtensionConfig.m */; };
+		B23A47D9211AE5C7000DB5D1 /* SPACELiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A47D7211AE5C7000DB5D1 /* SPACELiveCell.m */; };
+		B23A47DA211AE5C7000DB5D1 /* SPACELiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23A47D8211AE5C7000DB5D1 /* SPACELiveCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AB705467FEB3AA9C1E506E3 /* Pods-space-inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-space-inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-space-inke/Pods-space-inke.debug.xcconfig"; sourceTree = "<group>"; };
+		5205BA42EC844EA5491A59D0 /* Pods-space-inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-space-inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-space-inke/Pods-space-inke.release.xcconfig"; sourceTree = "<group>"; };
+		7891E459BDCCB5E4F29C3B67 /* libPods-space-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-space-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21F3F6A21193BC5009C1F30 /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		B21F3F6D21193EA8009C1F30 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SDWebImage.h"; path = "../../../../../../ios/尚学堂_大欢_5天教你学会直播/bjsxt-inke/bjsxt-inke/Class/NetWork/UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		B21F3F6E21193EA8009C1F30 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SDWebImage.m"; path = "../../../../../../ios/尚学堂_大欢_5天教你学会直播/bjsxt-inke/bjsxt-inke/Class/NetWork/UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		B21F3F6F21193EA8009C1F30 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpTool.h; path = "../../../../../../ios/尚学堂_大欢_5天教你学会直播/bjsxt-inke/bjsxt-inke/Class/NetWork/HttpTool.h"; sourceTree = "<group>"; };
+		B21F3F7021193EA8009C1F30 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpTool.m; path = "../../../../../../ios/尚学堂_大欢_5天教你学会直播/bjsxt-inke/bjsxt-inke/Class/NetWork/HttpTool.m"; sourceTree = "<group>"; };
+		B21F3F732119E29C009C1F30 /* SPACEBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEBaseHandler.h; sourceTree = "<group>"; };
+		B21F3F742119E29C009C1F30 /* SPACEBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEBaseHandler.m; sourceTree = "<group>"; };
+		B21F3F762119E3BC009C1F30 /* SPACELiveHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACELiveHandler.h; sourceTree = "<group>"; };
+		B21F3F772119E3BC009C1F30 /* SPACELiveHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACELiveHandler.m; sourceTree = "<group>"; };
+		B2246CCB211185F400459D5C /* space-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "space-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2246CD5211185F400459D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2246CDA211185F700459D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2246CDC211185F700459D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2246CDD211185F700459D5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2246CF1211188E400459D5C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2246CF2211188E400459D5C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2246D042111895600459D5C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B2246D062111C8FC00459D5C /* yingke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yingke.pch; sourceTree = "<group>"; };
+		B2246D072111CB7700459D5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2246D082111CB7700459D5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2246D0A2111DB4600459D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../ios/尚学堂_大欢_5天教你学会直播/bjsxt-inke/bjsxt-inke/Assets.xcassets"; sourceTree = "<group>"; };
+		B2246D0F2111DE8200459D5C /* SPACEMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEMacros.h; sourceTree = "<group>"; };
+		B2246D102111E08B00459D5C /* SPACETabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACETabBarViewController.h; sourceTree = "<group>"; };
+		B2246D112111E08B00459D5C /* SPACETabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACETabBarViewController.m; sourceTree = "<group>"; };
+		B2246D132111E0AC00459D5C /* SPACETabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACETabBar.h; sourceTree = "<group>"; };
+		B2246D142111E0AC00459D5C /* SPACETabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACETabBar.m; sourceTree = "<group>"; };
+		B2246D162112D54400459D5C /* SPACEBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEBaseViewController.h; sourceTree = "<group>"; };
+		B2246D172112D54400459D5C /* SPACEBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEBaseViewController.m; sourceTree = "<group>"; };
+		B2246D192112D5B500459D5C /* SPACEMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEMainViewController.h; sourceTree = "<group>"; };
+		B2246D1A2112D5B500459D5C /* SPACEMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEMainViewController.m; sourceTree = "<group>"; };
+		B2246D1B2112D5B500459D5C /* SPACEMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACEMainViewController.xib; sourceTree = "<group>"; };
+		B2246D1E2112D5D200459D5C /* SPACEMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEMeViewController.h; sourceTree = "<group>"; };
+		B2246D1F2112D5D200459D5C /* SPACEMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEMeViewController.m; sourceTree = "<group>"; };
+		B2246D202112D5D200459D5C /* SPACEMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACEMeViewController.xib; sourceTree = "<group>"; };
+		B2246D232112D70D00459D5C /* SPACEBaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEBaseNavViewController.h; sourceTree = "<group>"; };
+		B2246D242112D70D00459D5C /* SPACEBaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEBaseNavViewController.m; sourceTree = "<group>"; };
+		B2246D262112E56300459D5C /* SPACELaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACELaunchViewController.h; sourceTree = "<group>"; };
+		B2246D272112E56300459D5C /* SPACELaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACELaunchViewController.m; sourceTree = "<group>"; };
+		B2246D282112E56300459D5C /* SPACELaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACELaunchViewController.xib; sourceTree = "<group>"; };
+		B2246D2B2112F5DE00459D5C /* SPACEFocuseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEFocuseViewController.h; sourceTree = "<group>"; };
+		B2246D2C2112F5DE00459D5C /* SPACEFocuseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEFocuseViewController.m; sourceTree = "<group>"; };
+		B2246D2D2112F5DE00459D5C /* SPACEFocuseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACEFocuseViewController.xib; sourceTree = "<group>"; };
+		B2246D302112F60200459D5C /* SPACEHotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEHotViewController.h; sourceTree = "<group>"; };
+		B2246D312112F60200459D5C /* SPACEHotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEHotViewController.m; sourceTree = "<group>"; };
+		B2246D352112F61E00459D5C /* SPACENearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACENearViewController.h; sourceTree = "<group>"; };
+		B2246D362112F61E00459D5C /* SPACENearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACENearViewController.m; sourceTree = "<group>"; };
+		B2246D372112F61E00459D5C /* SPACENearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACENearViewController.xib; sourceTree = "<group>"; };
+		B2246D3A2118065000459D5C /* SPACEMainTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACEMainTopView.h; sourceTree = "<group>"; };
+		B2246D3B2118065000459D5C /* SPACEMainTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACEMainTopView.m; sourceTree = "<group>"; };
+		B23A47CA211AD422000DB5D1 /* SPACELive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACELive.h; sourceTree = "<group>"; };
+		B23A47CB211AD422000DB5D1 /* SPACELive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACELive.m; sourceTree = "<group>"; };
+		B23A47CD211AD49A000DB5D1 /* SPACECreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACECreator.h; sourceTree = "<group>"; };
+		B23A47CE211AD49A000DB5D1 /* SPACECreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACECreator.m; sourceTree = "<group>"; };
+		B23A47D0211AD91B000DB5D1 /* MJExtensionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		B23A47D1211AD91B000DB5D1 /* MJExtensionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		B23A47D6211AE5C7000DB5D1 /* SPACELiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPACELiveCell.h; sourceTree = "<group>"; };
+		B23A47D7211AE5C7000DB5D1 /* SPACELiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPACELiveCell.m; sourceTree = "<group>"; };
+		B23A47D8211AE5C7000DB5D1 /* SPACELiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPACELiveCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2246CC8211185F400459D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDAFEF8A0F8BA5D2F28CB88 /* libPods-space-inke.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9A17DE8E0D552AC77AA9FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB705467FEB3AA9C1E506E3 /* Pods-space-inke.debug.xcconfig */,
+				5205BA42EC844EA5491A59D0 /* Pods-space-inke.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2246CC2211185F400459D5C = {
+			isa = PBXGroup;
+			children = (
+				B2246D042111895600459D5C /* Default-568h@2x.png */,
+				B2246CCD211185F400459D5C /* space-inke */,
+				B2246CCC211185F400459D5C /* Products */,
+				0A9A17DE8E0D552AC77AA9FA /* Pods */,
+				F40AB36FB7424F1F218F0DCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2246CCC211185F400459D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CCB211185F400459D5C /* space-inke.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2246CCD211185F400459D5C /* space-inke */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CE4211188E400459D5C /* Class */,
+				B2246D032111890400459D5C /* Supporting Files */,
+			);
+			path = "space-inke";
+			sourceTree = "<group>";
+		};
+		B2246CE4211188E400459D5C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CF8211188E400459D5C /* Live */,
+				B2246D01211188E400459D5C /* Base */,
+				B2246CE5211188E400459D5C /* Launch */,
+				B2246CEA211188E400459D5C /* Show */,
+				B2246CEF211188E400459D5C /* NetWork */,
+				B2246CF0211188E400459D5C /* Other */,
+				B2246CF3211188E400459D5C /* Me */,
+				B2246CFD211188E400459D5C /* Lib */,
+				B2246CFE211188E400459D5C /* Helper */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B2246CE5211188E400459D5C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CE6211188E400459D5C /* Handler */,
+				B2246CE7211188E400459D5C /* Model */,
+				B2246CE8211188E400459D5C /* View */,
+				B2246CE9211188E400459D5C /* ViewController */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		B2246CE6211188E400459D5C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B2246CE7211188E400459D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2246CE8211188E400459D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2246CE9211188E400459D5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2246CEA211188E400459D5C /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CEB211188E400459D5C /* Handler */,
+				B2246CEC211188E400459D5C /* Model */,
+				B2246CED211188E400459D5C /* View */,
+				B2246CEE211188E400459D5C /* ViewController */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		B2246CEB211188E400459D5C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				B21F3F762119E3BC009C1F30 /* SPACELiveHandler.h */,
+				B21F3F772119E3BC009C1F30 /* SPACELiveHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B2246CEC211188E400459D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23A47CA211AD422000DB5D1 /* SPACELive.h */,
+				B23A47CB211AD422000DB5D1 /* SPACELive.m */,
+				B23A47CD211AD49A000DB5D1 /* SPACECreator.h */,
+				B23A47CE211AD49A000DB5D1 /* SPACECreator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2246CED211188E400459D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2246D3A2118065000459D5C /* SPACEMainTopView.h */,
+				B2246D3B2118065000459D5C /* SPACEMainTopView.m */,
+				B23A47D6211AE5C7000DB5D1 /* SPACELiveCell.h */,
+				B23A47D7211AE5C7000DB5D1 /* SPACELiveCell.m */,
+				B23A47D8211AE5C7000DB5D1 /* SPACELiveCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2246CEE211188E400459D5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2246D192112D5B500459D5C /* SPACEMainViewController.h */,
+				B2246D1A2112D5B500459D5C /* SPACEMainViewController.m */,
+				B2246D1B2112D5B500459D5C /* SPACEMainViewController.xib */,
+				B2246D1E2112D5D200459D5C /* SPACEMeViewController.h */,
+				B2246D1F2112D5D200459D5C /* SPACEMeViewController.m */,
+				B2246D202112D5D200459D5C /* SPACEMeViewController.xib */,
+				B2246D2B2112F5DE00459D5C /* SPACEFocuseViewController.h */,
+				B2246D2C2112F5DE00459D5C /* SPACEFocuseViewController.m */,
+				B2246D2D2112F5DE00459D5C /* SPACEFocuseViewController.xib */,
+				B2246D302112F60200459D5C /* SPACEHotViewController.h */,
+				B2246D312112F60200459D5C /* SPACEHotViewController.m */,
+				B2246D352112F61E00459D5C /* SPACENearViewController.h */,
+				B2246D362112F61E00459D5C /* SPACENearViewController.m */,
+				B2246D372112F61E00459D5C /* SPACENearViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2246CEF211188E400459D5C /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B21F3F6F21193EA8009C1F30 /* HttpTool.h */,
+				B21F3F7021193EA8009C1F30 /* HttpTool.m */,
+				B21F3F6D21193EA8009C1F30 /* UIImageView+SDWebImage.h */,
+				B21F3F6E21193EA8009C1F30 /* UIImageView+SDWebImage.m */,
+				B21F3F6A21193BC5009C1F30 /* APIConfig.h */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		B2246CF0211188E400459D5C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CF1211188E400459D5C /* AppDelegate.h */,
+				B2246CF2211188E400459D5C /* AppDelegate.m */,
+				B2246D062111C8FC00459D5C /* yingke.pch */,
+				B2246D072111CB7700459D5C /* ViewController.h */,
+				B2246D082111CB7700459D5C /* ViewController.m */,
+				B2246D0F2111DE8200459D5C /* SPACEMacros.h */,
+				B23A47D0211AD91B000DB5D1 /* MJExtensionConfig.h */,
+				B23A47D1211AD91B000DB5D1 /* MJExtensionConfig.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B2246CF3211188E400459D5C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CF4211188E400459D5C /* Handler */,
+				B2246CF5211188E400459D5C /* Model */,
+				B2246CF6211188E400459D5C /* View */,
+				B2246CF7211188E400459D5C /* ViewController */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B2246CF4211188E400459D5C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B2246CF5211188E400459D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2246CF6211188E400459D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2246CF7211188E400459D5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2246CF8211188E400459D5C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CF9211188E400459D5C /* Handler */,
+				B2246CFA211188E400459D5C /* Model */,
+				B2246CFB211188E400459D5C /* View */,
+				B2246CFC211188E400459D5C /* ViewController */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		B2246CF9211188E400459D5C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B2246CFA211188E400459D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2246CFB211188E400459D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2246CFC211188E400459D5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2246D262112E56300459D5C /* SPACELaunchViewController.h */,
+				B2246D272112E56300459D5C /* SPACELaunchViewController.m */,
+				B2246D282112E56300459D5C /* SPACELaunchViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2246CFD211188E400459D5C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B2246CFE211188E400459D5C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B2246CFF211188E400459D5C /* Tools */,
+				B2246D00211188E400459D5C /* Category */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B2246CFF211188E400459D5C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B2246D00211188E400459D5C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B2246D01211188E400459D5C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B2246D102111E08B00459D5C /* SPACETabBarViewController.h */,
+				B2246D112111E08B00459D5C /* SPACETabBarViewController.m */,
+				B2246D132111E0AC00459D5C /* SPACETabBar.h */,
+				B2246D142111E0AC00459D5C /* SPACETabBar.m */,
+				B2246D162112D54400459D5C /* SPACEBaseViewController.h */,
+				B2246D172112D54400459D5C /* SPACEBaseViewController.m */,
+				B2246D232112D70D00459D5C /* SPACEBaseNavViewController.h */,
+				B2246D242112D70D00459D5C /* SPACEBaseNavViewController.m */,
+				B21F3F732119E29C009C1F30 /* SPACEBaseHandler.h */,
+				B21F3F742119E29C009C1F30 /* SPACEBaseHandler.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B2246D032111890400459D5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2246D0A2111DB4600459D5C /* Assets.xcassets */,
+				B2246CD9211185F700459D5C /* LaunchScreen.storyboard */,
+				B2246CDC211185F700459D5C /* Info.plist */,
+				B2246CDD211185F700459D5C /* main.m */,
+				B2246CD4211185F400459D5C /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F40AB36FB7424F1F218F0DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7891E459BDCCB5E4F29C3B67 /* libPods-space-inke.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2246CCA211185F400459D5C /* space-inke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2246CE1211185F700459D5C /* Build configuration list for PBXNativeTarget "space-inke" */;
+			buildPhases = (
+				1DF7E41109FE58130336B29B /* [CP] Check Pods Manifest.lock */,
+				B2246CC7211185F400459D5C /* Sources */,
+				B2246CC8211185F400459D5C /* Frameworks */,
+				B2246CC9211185F400459D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "space-inke";
+			productName = "space-inke";
+			productReference = B2246CCB211185F400459D5C /* space-inke.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2246CC3211185F400459D5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPACE;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = space;
+				TargetAttributes = {
+					B2246CCA211185F400459D5C = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = B2246CC6211185F400459D5C /* Build configuration list for PBXProject "space-inke" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2246CC2211185F400459D5C;
+			productRefGroup = B2246CCC211185F400459D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2246CCA211185F400459D5C /* space-inke */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2246CC9211185F400459D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2246D2A2112E56300459D5C /* SPACELaunchViewController.xib in Resources */,
+				B23A47DA211AE5C7000DB5D1 /* SPACELiveCell.xib in Resources */,
+				B2246D1D2112D5B500459D5C /* SPACEMainViewController.xib in Resources */,
+				B2246D222112D5D200459D5C /* SPACEMeViewController.xib in Resources */,
+				B2246D392112F61E00459D5C /* SPACENearViewController.xib in Resources */,
+				B2246CDB211185F700459D5C /* LaunchScreen.storyboard in Resources */,
+				B2246D052111895600459D5C /* Default-568h@2x.png in Resources */,
+				B2246D0B2111DB4600459D5C /* Assets.xcassets in Resources */,
+				B2246D2F2112F5DE00459D5C /* SPACEFocuseViewController.xib in Resources */,
+				B2246CD6211185F400459D5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DF7E41109FE58130336B29B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-space-inke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2246CC7211185F400459D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2246D252112D70D00459D5C /* SPACEBaseNavViewController.m in Sources */,
+				B2246D332112F60200459D5C /* SPACEHotViewController.m in Sources */,
+				B23A47D2211AD91C000DB5D1 /* MJExtensionConfig.m in Sources */,
+				B23A47CC211AD422000DB5D1 /* SPACELive.m in Sources */,
+				B2246D092111CB7700459D5C /* ViewController.m in Sources */,
+				B21F3F7221193EA8009C1F30 /* HttpTool.m in Sources */,
+				B2246D382112F61E00459D5C /* SPACENearViewController.m in Sources */,
+				B21F3F752119E29C009C1F30 /* SPACEBaseHandler.m in Sources */,
+				B2246D2E2112F5DE00459D5C /* SPACEFocuseViewController.m in Sources */,
+				B21F3F7121193EA8009C1F30 /* UIImageView+SDWebImage.m in Sources */,
+				B2246D152111E0AC00459D5C /* SPACETabBar.m in Sources */,
+				B2246D182112D54400459D5C /* SPACEBaseViewController.m in Sources */,
+				B2246D1C2112D5B500459D5C /* SPACEMainViewController.m in Sources */,
+				B2246D122111E08B00459D5C /* SPACETabBarViewController.m in Sources */,
+				B23A47CF211AD49A000DB5D1 /* SPACECreator.m in Sources */,
+				B2246D02211188E400459D5C /* AppDelegate.m in Sources */,
+				B2246CDE211185F700459D5C /* main.m in Sources */,
+				B2246D292112E56300459D5C /* SPACELaunchViewController.m in Sources */,
+				B2246D3C2118065000459D5C /* SPACEMainTopView.m in Sources */,
+				B2246D212112D5D200459D5C /* SPACEMeViewController.m in Sources */,
+				B23A47D9211AE5C7000DB5D1 /* SPACELiveCell.m in Sources */,
+				B21F3F782119E3BC009C1F30 /* SPACELiveHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2246CD4211185F400459D5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2246CD5211185F400459D5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2246CD9211185F700459D5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2246CDA211185F700459D5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2246CDF211185F700459D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2246CE0211185F700459D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2246CE2211185F700459D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB705467FEB3AA9C1E506E3 /* Pods-space-inke.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/space-inke/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/space-inke/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "space.space-inke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2246CE3211185F700459D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5205BA42EC844EA5491A59D0 /* Pods-space-inke.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/space-inke/Class/Other/yingke.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/space-inke/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "space.space-inke";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2246CC6211185F400459D5C /* Build configuration list for PBXProject "space-inke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2246CDF211185F700459D5C /* Debug */,
+				B2246CE0211185F700459D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2246CE1211185F700459D5C /* Build configuration list for PBXNativeTarget "space-inke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2246CE2211185F700459D5C /* Debug */,
+				B2246CE3211185F700459D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2246CC3211185F400459D5C /* Project object */;
+}
