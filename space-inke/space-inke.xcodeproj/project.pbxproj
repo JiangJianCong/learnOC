@@ -711,7 +711,6 @@
 			baseConfigurationReference = 1AB705467FEB3AA9C1E506E3 /* Pods-space-inke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/space-inke/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/space-inke/Supporting Files/Info.plist";
@@ -730,7 +729,6 @@
 			baseConfigurationReference = 5205BA42EC844EA5491A59D0 /* Pods-space-inke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/space-inke/Class/Other/yingke.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/space-inke/Supporting Files/Info.plist";

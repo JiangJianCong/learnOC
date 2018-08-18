@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SpaceTabBarViewController.h"
+#import "SpaceBaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    SpaceTabBarViewController * mainVC = [[SpaceTabBarViewController alloc] init];
+    self.window.rootViewController = mainVC;
+//
+//    SpaceBaseViewController * mv = [[SpaceBaseViewController alloc]init];
+//    self.window.rootViewController = mv;
+    
     return YES;
 }
 

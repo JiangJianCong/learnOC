@@ -14,3 +14,8 @@ AppledeMacBook-Pro:PhotoProject space$ pod init
 
 > 紧接着就是pch文件到配置
 
+- 参考百度
+
+
+
+> 

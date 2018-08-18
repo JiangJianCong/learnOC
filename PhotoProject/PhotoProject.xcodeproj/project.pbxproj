@@ -8,20 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		22A661018BB675A2D2866E81 /* libPods-PhotoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC2B62699D208EBB4D3C55E /* libPods-PhotoProject.a */; };
+		B22AEA5E212577C200969BF0 /* SpaceTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22AEA5D212577C200969BF0 /* SpaceTabBarViewController.m */; };
+		B22AEA61212579FA00969BF0 /* SpaceBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22AEA60212579FA00969BF0 /* SpaceBaseViewController.m */; };
+		B22AEA6D21257D4600969BF0 /* SpaceTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B22AEA6C21257D4600969BF0 /* SpaceTabBar.m */; };
 		B2407957212566ED008CCE2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2407956212566ED008CCE2C /* AppDelegate.m */; };
+		B270C2B82127C0F900A52789 /* SpaceMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2B62127C0F900A52789 /* SpaceMeViewController.m */; };
+		B270C2B92127C0F900A52789 /* SpaceMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B270C2B72127C0F900A52789 /* SpaceMeViewController.xib */; };
+		B270C2BC2127C7C100A52789 /* SpaceBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2BB2127C7C100A52789 /* SpaceBaseNavViewController.m */; };
+		B270C2BF21280DEA00A52789 /* SpaceMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2BE21280DEA00A52789 /* SpaceMainTopView.m */; };
+		B270C2C32128183300A52789 /* SpaceHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2C12128183300A52789 /* SpaceHomeViewController.m */; };
+		B270C2C42128183300A52789 /* SpaceHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B270C2C22128183300A52789 /* SpaceHomeViewController.xib */; };
+		B270C2CB2128185400A52789 /* SpaceFrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2C92128185400A52789 /* SpaceFrisViewController.m */; };
+		B270C2CC2128185400A52789 /* SpaceFrisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B270C2CA2128185400A52789 /* SpaceFrisViewController.xib */; };
+		B270C2CF21282CBA00A52789 /* SpaceBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C2CE21282CBA00A52789 /* SpaceBaseHandler.m */; };
+		B270C31A21286CD200A52789 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C31521286CD200A52789 /* UIImageView+SDWebImage.m */; };
+		B270C31B21286CD200A52789 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C31821286CD200A52789 /* HttpTool.m */; };
+		B270C34D212874B100A52789 /* SpaceMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B270C34B212874B100A52789 /* SpaceMainViewController.m */; };
+		B270C34E212874B100A52789 /* SpaceMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B270C34C212874B100A52789 /* SpaceMainViewController.xib */; };
 		B2DB16BD212558AC002090ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB16BC212558AC002090ED /* ViewController.m */; };
 		B2DB16D821255BA3002090ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D021255BA3002090ED /* Assets.xcassets */; };
 		B2DB16D921255BA3002090ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D121255BA3002090ED /* LaunchScreen.storyboard */; };
 		B2DB16DA21255BA3002090ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D321255BA3002090ED /* Main.storyboard */; };
 		B2DB16DB21255BA3002090ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB16D521255BA3002090ED /* main.m */; };
 		B2DB16DD21255BA3002090ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2DB16D721255BA3002090ED /* Info.plist */; };
+		B2DFBE3F21256A0000B59B7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2DFBE3E21256A0000B59B7B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EDCB3EB55C5C364FFE27207 /* Pods-PhotoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoProject/Pods-PhotoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4686AD7212CD13425E92D902 /* Pods-PhotoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoProject/Pods-PhotoProject.release.xcconfig"; sourceTree = "<group>"; };
+		B22AEA5C212577C200969BF0 /* SpaceTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceTabBarViewController.h; sourceTree = "<group>"; };
+		B22AEA5D212577C200969BF0 /* SpaceTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceTabBarViewController.m; sourceTree = "<group>"; };
+		B22AEA5F212579FA00969BF0 /* SpaceBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceBaseViewController.h; sourceTree = "<group>"; };
+		B22AEA60212579FA00969BF0 /* SpaceBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceBaseViewController.m; sourceTree = "<group>"; };
+		B22AEA6621257B1D00969BF0 /* SpaceMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceMacros.h; sourceTree = "<group>"; };
+		B22AEA6B21257D4600969BF0 /* SpaceTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceTabBar.h; sourceTree = "<group>"; };
+		B22AEA6C21257D4600969BF0 /* SpaceTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceTabBar.m; sourceTree = "<group>"; };
 		B2407955212566ED008CCE2C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2407956212566ED008CCE2C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B270C2B52127C0F900A52789 /* SpaceMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceMeViewController.h; sourceTree = "<group>"; };
+		B270C2B62127C0F900A52789 /* SpaceMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceMeViewController.m; sourceTree = "<group>"; };
+		B270C2B72127C0F900A52789 /* SpaceMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceMeViewController.xib; sourceTree = "<group>"; };
+		B270C2BA2127C7C100A52789 /* SpaceBaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceBaseNavViewController.h; sourceTree = "<group>"; };
+		B270C2BB2127C7C100A52789 /* SpaceBaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceBaseNavViewController.m; sourceTree = "<group>"; };
+		B270C2BD21280DEA00A52789 /* SpaceMainTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceMainTopView.h; sourceTree = "<group>"; };
+		B270C2BE21280DEA00A52789 /* SpaceMainTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceMainTopView.m; sourceTree = "<group>"; };
+		B270C2C02128183300A52789 /* SpaceHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceHomeViewController.h; sourceTree = "<group>"; };
+		B270C2C12128183300A52789 /* SpaceHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceHomeViewController.m; sourceTree = "<group>"; };
+		B270C2C22128183300A52789 /* SpaceHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceHomeViewController.xib; sourceTree = "<group>"; };
+		B270C2C82128185400A52789 /* SpaceFrisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceFrisViewController.h; sourceTree = "<group>"; };
+		B270C2C92128185400A52789 /* SpaceFrisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceFrisViewController.m; sourceTree = "<group>"; };
+		B270C2CA2128185400A52789 /* SpaceFrisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceFrisViewController.xib; sourceTree = "<group>"; };
+		B270C2CD21282CBA00A52789 /* SpaceBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceBaseHandler.h; sourceTree = "<group>"; };
+		B270C2CE21282CBA00A52789 /* SpaceBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceBaseHandler.m; sourceTree = "<group>"; };
+		B270C31521286CD200A52789 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		B270C31621286CD200A52789 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		B270C31721286CD200A52789 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		B270C31821286CD200A52789 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		B270C31921286CD200A52789 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		B270C34A212874B100A52789 /* SpaceMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceMainViewController.h; sourceTree = "<group>"; };
+		B270C34B212874B100A52789 /* SpaceMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceMainViewController.m; sourceTree = "<group>"; };
+		B270C34C212874B100A52789 /* SpaceMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceMainViewController.xib; sourceTree = "<group>"; };
+		B29B0B0A212567BA00AC897C /* Photo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.pch; sourceTree = "<group>"; };
 		B2DB16B5212558AC002090ED /* PhotoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DB16BB212558AC002090ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B2DB16BC212558AC002090ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -30,6 +78,7 @@
 		B2DB16D421255BA3002090ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2DB16D521255BA3002090ED /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2DB16D721255BA3002090ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DFBE3E21256A0000B59B7B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DAC2B62699D208EBB4D3C55E /* libPods-PhotoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,18 +103,100 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B22AEA6721257C7900969BF0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B270C2C02128183300A52789 /* SpaceHomeViewController.h */,
+				B270C2C12128183300A52789 /* SpaceHomeViewController.m */,
+				B270C2C22128183300A52789 /* SpaceHomeViewController.xib */,
+				B270C2C82128185400A52789 /* SpaceFrisViewController.h */,
+				B270C2C92128185400A52789 /* SpaceFrisViewController.m */,
+				B270C2CA2128185400A52789 /* SpaceFrisViewController.xib */,
+				B270C34A212874B100A52789 /* SpaceMainViewController.h */,
+				B270C34B212874B100A52789 /* SpaceMainViewController.m */,
+				B270C34C212874B100A52789 /* SpaceMainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B22AEA6A21257C7900969BF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B270C2BD21280DEA00A52789 /* SpaceMainTopView.h */,
+				B270C2BE21280DEA00A52789 /* SpaceMainTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2407954212566ED008CCE2C /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				B2407955212566ED008CCE2C /* AppDelegate.h */,
 				B2407956212566ED008CCE2C /* AppDelegate.m */,
+				B29B0B0A212567BA00AC897C /* Photo.pch */,
+				B22AEA6621257B1D00969BF0 /* SpaceMacros.h */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		B270C2B02127C0E500A52789 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B270C2B12127C0E500A52789 /* Handler */,
+				B270C2B22127C0E500A52789 /* Model */,
+				B270C2B32127C0E500A52789 /* View */,
+				B270C2B42127C0E500A52789 /* ViewController */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		B270C2B12127C0E500A52789 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B270C2B22127C0E500A52789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B270C2B32127C0E500A52789 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B270C2B42127C0E500A52789 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B270C2B52127C0F900A52789 /* SpaceMeViewController.h */,
+				B270C2B62127C0F900A52789 /* SpaceMeViewController.m */,
+				B270C2B72127C0F900A52789 /* SpaceMeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B270C31421286CD200A52789 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B270C31521286CD200A52789 /* UIImageView+SDWebImage.m */,
+				B270C31621286CD200A52789 /* HttpTool.h */,
+				B270C31721286CD200A52789 /* APIConfig.h */,
+				B270C31821286CD200A52789 /* HttpTool.m */,
+				B270C31921286CD200A52789 /* UIImageView+SDWebImage.h */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		B2DB16AC212558AC002090ED = {
 			isa = PBXGroup;
 			children = (
+				B2DFBE3E21256A0000B59B7B /* Default-568h@2x.png */,
 				B2DB16B7212558AC002090ED /* PhotoProject */,
 				B2DB16B6212558AC002090ED /* Products */,
 				6CE1A6E3196C4F22754E3887 /* Pods */,
@@ -107,6 +238,7 @@
 		B2DB16DE21255C13002090ED /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B270C31421286CD200A52789 /* NetWork */,
 				B2407954212566ED008CCE2C /* Other */,
 				B2DB16DF21255C13002090ED /* Home */,
 				B2DB16E021255C13002090ED /* Me */,
@@ -118,6 +250,8 @@
 		B2DB16DF21255C13002090ED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B22AEA6A21257C7900969BF0 /* View */,
+				B22AEA6721257C7900969BF0 /* ViewController */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -125,6 +259,7 @@
 		B2DB16E021255C13002090ED /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				B270C2B02127C0E500A52789 /* Me */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -132,6 +267,16 @@
 		B2DB16E121255C13002090ED /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B22AEA5C212577C200969BF0 /* SpaceTabBarViewController.h */,
+				B22AEA5D212577C200969BF0 /* SpaceTabBarViewController.m */,
+				B22AEA5F212579FA00969BF0 /* SpaceBaseViewController.h */,
+				B22AEA60212579FA00969BF0 /* SpaceBaseViewController.m */,
+				B22AEA6B21257D4600969BF0 /* SpaceTabBar.h */,
+				B22AEA6C21257D4600969BF0 /* SpaceTabBar.m */,
+				B270C2BA2127C7C100A52789 /* SpaceBaseNavViewController.h */,
+				B270C2BB2127C7C100A52789 /* SpaceBaseNavViewController.m */,
+				B270C2CD21282CBA00A52789 /* SpaceBaseHandler.h */,
+				B270C2CE21282CBA00A52789 /* SpaceBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -171,6 +316,7 @@
 		B2DB16AD212558AC002090ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Space;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = space;
 				TargetAttributes = {
@@ -202,9 +348,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B270C2C42128183300A52789 /* SpaceHomeViewController.xib in Resources */,
+				B270C2B92127C0F900A52789 /* SpaceMeViewController.xib in Resources */,
+				B270C2CC2128185400A52789 /* SpaceFrisViewController.xib in Resources */,
 				B2DB16D821255BA3002090ED /* Assets.xcassets in Resources */,
+				B270C34E212874B100A52789 /* SpaceMainViewController.xib in Resources */,
 				B2DB16DA21255BA3002090ED /* Main.storyboard in Resources */,
 				B2DB16D921255BA3002090ED /* LaunchScreen.storyboard in Resources */,
+				B2DFBE3F21256A0000B59B7B /* Default-568h@2x.png in Resources */,
 				B2DB16DD21255BA3002090ED /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,9 +388,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B270C2BF21280DEA00A52789 /* SpaceMainTopView.m in Sources */,
+				B270C2CF21282CBA00A52789 /* SpaceBaseHandler.m in Sources */,
 				B2DB16BD212558AC002090ED /* ViewController.m in Sources */,
+				B22AEA5E212577C200969BF0 /* SpaceTabBarViewController.m in Sources */,
+				B270C2CB2128185400A52789 /* SpaceFrisViewController.m in Sources */,
+				B22AEA6D21257D4600969BF0 /* SpaceTabBar.m in Sources */,
 				B2DB16DB21255BA3002090ED /* main.m in Sources */,
 				B2407957212566ED008CCE2C /* AppDelegate.m in Sources */,
+				B270C31A21286CD200A52789 /* UIImageView+SDWebImage.m in Sources */,
+				B22AEA61212579FA00969BF0 /* SpaceBaseViewController.m in Sources */,
+				B270C2BC2127C7C100A52789 /* SpaceBaseNavViewController.m in Sources */,
+				B270C2C32128183300A52789 /* SpaceHomeViewController.m in Sources */,
+				B270C2B82127C0F900A52789 /* SpaceMeViewController.m in Sources */,
+				B270C31B21286CD200A52789 /* HttpTool.m in Sources */,
+				B270C34D212874B100A52789 /* SpaceMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +544,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhotoProject/Info.plist;
+				DEVELOPMENT_TEAM = C9AN7G4C98;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhotoProject/Class/Other/Photo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +563,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhotoProject/Info.plist;
+				DEVELOPMENT_TEAM = C9AN7G4C98;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PhotoProject/Class/Other/Photo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

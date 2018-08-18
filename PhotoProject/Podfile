@@ -11,5 +11,6 @@ pod 'YYKit', '~> 1.0.9'
 pod 'AFNetworking', '~> 3.2.1'
 pod 'SDWebImage', '~> 5.0.0-beta2'
 pod 'Masonry', '~> 1.1.0'
+pod 'MJExtension', '~> 3.0.15.1'
 
 end
